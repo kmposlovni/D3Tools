@@ -154,7 +154,7 @@ function redrawCrypto(divId, data) {
     d3.select(document.getElementById(divId)).selectAll("*").remove();
     const svg = d3.select(document.getElementById(divId)).append("svg").attr("width", width).attr("height", height).append("g");
 
-    let yLimit = 400.0;
+    let yLimit = initialCash;
     const dataForStackedArea = [];
     for(const i in data) {
         dataForStackedArea[i] = [];
